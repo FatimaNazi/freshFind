@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Feedback &amp; Suggestions | FreshFind</title>
+  <meta name="description" content="Share your feedback, website experience, or market suggestions with FreshFind.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  
+  <div id="navbar"></div>
+
+  <!-- Bootstrap Breadcrumb Navigation -->
+  <nav aria-label="breadcrumb" class="ff-breadcrumb-nav">
+    <div class="container">
+      <ol class="breadcrumb mb-0 py-2">
+        <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house-door me-1"></i>Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Feedback</li>
+      </ol>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge-soft">Community Voice</span>
+      <h1 class="mt-3">Your Feedback Matters</h1>
+      <p class="section-sub mb-0">Help us improve FreshFind by rating your experience, suggesting new local markets, or reporting issues.</p>
+    </div>
+  </section>
+
+  <section class="section pt-4">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Sidebar Info -->
+        <div class="col-lg-5">
+          <span class="badge-soft">Why Feedback Counts</span>
+          <h2 class="section-title mt-3">Help Shape FreshFind</h2>
+          <p class="text-secondary">
+            FreshFind is designed around neighborhood communities and shoppers like you. Every suggestion helps refine our market schedules and produce guides.
+          </p>
+
+          <div class="d-grid gap-3 mt-4">
+            <div class="info-card p-4 d-flex gap-3 align-items-center">
+              <div class="product-icon"><i class="bi bi-stars"></i></div>
+              <div>
+                <strong>Rate Your Experience</strong>
+                <div class="text-secondary small">Tell us how intuitive the directory, search, and chatbot are.</div>
+              </div>
+            </div>
+            <div class="info-card p-4 d-flex gap-3 align-items-center">
+              <div class="product-icon"><i class="bi bi-shop"></i></div>
+              <div>
+                <strong>Suggest a Market</strong>
+                <div class="text-secondary small">Know a local weekend bazaar or farmers street stall? Recommend it!</div>
+              </div>
+            </div>
+            <div class="info-card p-4 d-flex gap-3 align-items-center">
+              <div class="product-icon"><i class="bi bi-bug"></i></div>
+              <div>
+                <strong>Report Website Issues</strong>
+                <div class="text-secondary small">Spot an incorrect phone number, outdated hours, or display glitch?</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert alert-light border small text-muted mt-4">
+            <i class="bi bi-envelope me-1"></i>Need direct inquiry instead? Visit our <a href="contact.html" class="text-success fw-bold text-decoration-underline">Contact Page</a>.
+          </div>
+        </div>
+
+        <!-- Feedback Form Container -->
+        <div class="col-lg-7">
+          <div class="info-card p-4 p-lg-5" id="feedbackFormCard">
+            <!-- Form Header -->
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge-soft"><i class="bi bi-chat-heart me-1"></i>Interactive Feedback</span>
+              <span class="small text-muted">* Client-side validated</span>
+            </div>
+            <h2 class="h3 mt-2 mb-1">Send Your Feedback</h2>
+            <p class="text-secondary small mb-4">Please fill out the form below. Your input helps us provide better local produce discovery.</p>
+
+            <!-- Feedback Form -->
+            <form class="mt-3" id="mainFeedbackForm" novalidate>
+              <div class="row g-3">
+                <!-- Full Name -->
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold" for="feedbackName">Full Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="feedbackName" name="name" data-validate="required,name" placeholder="e.g. Ayesha Khan" autocomplete="name">
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold" for="feedbackEmail">Email Address <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="feedbackEmail" name="email" data-validate="required,email" placeholder="you@example.com" autocomplete="email">
+                </div>
+
+                <!-- Feedback Type -->
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold" for="feedbackType">Feedback Type <span class="text-danger">*</span></label>
+                  <select class="form-select" id="feedbackType" name="feedbackType" data-validate="required">
+                    <option value="">Choose feedback type...</option>
+                    <option value="General Feedback">General Feedback</option>
+                    <option value="Website Issue">Website Issue</option>
+                    <option value="Market Information">Market Information</option>
+                    <option value="Product Information">Product Information</option>
+                    <option value="Suggestion">Suggestion</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <!-- Experience Rating (1-5 stars) -->
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Experience Rating</label>
+                  <div class="star-rating-selector d-flex align-items-center gap-2 pt-1" id="starRatingGroup">
+                    <div class="star-buttons d-flex gap-1" role="radiogroup" aria-label="Rate from 1 to 5 stars">
+                      <button type="button" class="btn btn-sm btn-outline-warning star-btn active" data-rating="1" aria-label="1 star"><i class="bi bi-star-fill"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-warning star-btn active" data-rating="2" aria-label="2 stars"><i class="bi bi-star-fill"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-warning star-btn active" data-rating="3" aria-label="3 stars"><i class="bi bi-star-fill"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-warning star-btn active" data-rating="4" aria-label="4 stars"><i class="bi bi-star-fill"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-warning star-btn active" data-rating="5" aria-label="5 stars"><i class="bi bi-star-fill"></i></button>
+                    </div>
+                    <span class="small fw-bold text-muted ms-2" id="starRatingLabel">5 / 5 (Excellent)</span>
+                    <input type="hidden" id="feedbackRating" name="rating" value="5">
+                  </div>
+                </div>
+
+                <!-- Message -->
+                <div class="col-12">
+                  <label class="form-label fw-semibold" for="feedbackMessage">Your Feedback / Message <span class="text-danger">*</span></label>
+                  <textarea class="form-control" id="feedbackMessage" name="message" data-validate="required" rows="5" placeholder="Share your experience, feature ideas, or market details here..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 mt-4">
+                  <button class="btn btn-green w-100 py-2 fs-6 fw-bold" type="submit" id="feedbackSubmitBtn">
+                    <i class="bi bi-send-check me-2"></i>Submit Feedback
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <!-- Success State -->
+            <div id="feedbackSuccessState" class="p-4 p-md-5 text-center rounded-4 border bg-white shadow-sm mt-3" style="display:none;">
+              <div class="text-success fs-1 mb-2"><i class="bi bi-check-circle-fill"></i></div>
+              <h3 class="fw-bold">Thank You for Your Feedback!</h3>
+              <p class="text-secondary mb-3">
+                Your response has been noted and recorded locally for this session.
+              </p>
+
+              <div class="card bg-light border-0 p-3 text-start small mb-4">
+                <div><strong>Sender:</strong> <span id="summaryName"></span> (<span id="summaryEmail"></span>)</div>
+                <div><strong>Category:</strong> <span id="summaryType"></span></div>
+                <div><strong>Rating:</strong> <span id="summaryRating"></span></div>
+                <div class="mt-2"><strong>Feedback Message:</strong></div>
+                <div class="text-muted fst-italic mt-1" id="summaryMessage"></div>
+              </div>
+
+              <div class="alert alert-light border small text-muted mb-4 py-2">
+                <i class="bi bi-shield-check text-success me-1"></i>This is a frontend demonstration project &mdash; no server API call was dispatched.
+              </div>
+
+              <button type="button" class="btn btn-outline-green" id="submitAnotherFeedbackBtn">
+                <i class="bi bi-arrow-repeat me-1"></i>Submit Another Response
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/navbar.js"></script>
+  <script src="assets/footer.js"></script>
+  <script src="assets/chatbot.js"></script>
+  <script src="assets/validation.js"></script>
+  <script src="assets/auth.js"></script>
+  <script src="assets/cards.js"></script>
+
+  <script>
+    // Interactive Star Rating Logic
+    (function () {
+      var starGroup = document.getElementById("starRatingGroup");
+      var ratingInput = document.getElementById("feedbackRating");
+      var ratingLabel = document.getElementById("starRatingLabel");
+      if (!starGroup) return;
+
+      var labels = {
+        1: "1 / 5 (Poor)",
+        2: "2 / 5 (Fair)",
+        3: "3 / 5 (Good)",
+        4: "4 / 5 (Very Good)",
+        5: "5 / 5 (Excellent)"
+      };
+
+      starGroup.querySelectorAll(".star-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var val = parseInt(btn.getAttribute("data-rating"), 10);
+          ratingInput.value = val;
+          ratingLabel.textContent = labels[val] || (val + " / 5");
+
+          starGroup.querySelectorAll(".star-btn").forEach(function (b) {
+            var bVal = parseInt(b.getAttribute("data-rating"), 10);
+            b.classList.toggle("active", bVal <= val);
+            var icon = b.querySelector("i");
+            if (icon) {
+              icon.className = bVal <= val ? "bi bi-star-fill" : "bi bi-star";
+            }
+          });
+        });
+      });
+    })();
+
+    // Client-side Feedback Form Validation & Success State
+    (function () {
+      var form = document.getElementById("mainFeedbackForm");
+      var successBox = document.getElementById("feedbackSuccessState");
+      var anotherBtn = document.getElementById("submitAnotherFeedbackBtn");
+
+      if (!form) return;
+
+      attachFormValidation(form, function (validForm) {
+        var name = document.getElementById("feedbackName").value.trim();
+        var email = document.getElementById("feedbackEmail").value.trim();
+        var type = document.getElementById("feedbackType").value;
+        var rating = document.getElementById("feedbackRating").value;
+        var message = document.getElementById("feedbackMessage").value.trim();
+
+        // Populate summary
+        document.getElementById("summaryName").textContent = name;
+        document.getElementById("summaryEmail").textContent = email;
+        document.getElementById("summaryType").textContent = type;
+        document.getElementById("summaryRating").textContent = rating + " / 5 Stars";
+        document.getElementById("summaryMessage").textContent = message;
+
+        // Switch to success state
+        form.style.display = "none";
+        successBox.style.display = "block";
+        showFormToast("Thank you! Your feedback has been received.");
+      });
+
+      if (anotherBtn) {
+        anotherBtn.addEventListener("click", function () {
+          form.reset();
+          form.querySelectorAll(".is-valid, .is-invalid").forEach(function (el) {
+            el.classList.remove("is-valid", "is-invalid");
+          });
+          successBox.style.display = "none";
+          form.style.display = "block";
+        });
+      }
+    })();
+  </script>
+</body>
+
+</html>

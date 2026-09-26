@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Home | FreshFind</title>
+  <meta name="description" content="FreshFind helps you discover farmers markets and seasonal produce.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+  <div id="navbar"></div>
+
+  <!-- Bootstrap Breadcrumb Navigation -->
+  <nav aria-label="breadcrumb" class="ff-breadcrumb-nav">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <ol class="breadcrumb mb-0 py-2">
+        <li class="breadcrumb-item active" aria-current="page"><i class="bi bi-house-door me-1"></i>Home</li>
+      </ol>
+      <div class="ff-subnav-meta d-flex align-items-center gap-3 py-1 ms-auto">
+        <span class="subnav-visitor-badge" title="Total Website Visits">
+          <i class="bi bi-people-fill text-success me-1"></i>
+          <span id="visitorCount" class="visitor-count-value">0</span> visits
+        </span>
+        <span class="subnav-clock small" title="Current Time &amp; Date">
+          <i class="bi bi-clock-fill text-warning me-1"></i>
+          <span id="subnavClockText">--:--:--</span>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero hero-immersive">
+
+    <div class="hero-image">
+      <img src="assets/Images/hero.jpg" alt="Fresh local market">
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container position-relative">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h1>
+            Find fresh markets.<br>
+            <span class="text-gold">Track what matters.</span>
+          </h1>
+          <p>
+            FreshFind helps you discover nearby farmers markets,
+            follow what's in season and track down the exact
+            produce you're looking for all matched to your
+            neighborhood and schedule.
+          </p>
+          <a href="markets.html" class="btn btn-gold btn-lg mt-2">
+            Explore Markets
+          </a>
+        </div>
+
+
+        <div class="col-lg-6">
+
+          <div class="active-markets-panel" id="activeMarketsPanel">
+
+            <div class="amp-head d-flex justify-content-between align-items-center flex-wrap gap-2">
+              <div class="d-flex align-items-center gap-2">
+                <span class="amp-live-dot"></span>
+                <span class="fw-bold">Active Markets</span>
+              </div>
+              <button type="button" class="btn btn-sm btn-gold amp-geo-btn" id="findNearestMarketBtn" title="Detect nearest market using browser location">
+                <i class="bi bi-geo-alt-fill me-1"></i>Find Nearest Market
+              </button>
+            </div>
+
+            <div id="heroGeoStatus" class="alert alert-warning py-2 px-3 small mx-3 mt-3 mb-0" style="display:none;"></div>
+
+            <div id="nearestMarketDisplay" class="p-3" style="display:none;"></div>
+
+            <div class="amp-list" id="defaultActiveMarketsList">
+
+              <a class="amp-item" href="market-detail.html#clifton">
+
+                <div class="amp-item-top">
+                  <span class="amp-name">
+                    Clifton Weekend Market
+                  </span>
+
+                  <span class="amp-status is-live">
+                    <span class="amp-dot"></span>
+                    Saturday &amp; Sunday
+                  </span>
+                </div>
+
+                <div class="amp-meta">
+
+                  <span>
+                    <i class="bi bi-geo-alt"></i>
+                    Clifton
+                  </span>
+
+                  <span>
+                    <i class="bi bi-basket2"></i>
+                    4 item types
+                  </span>
+
+                </div>
+
+              </a>
+
+
+              <a class="amp-item" href="market-detail.html#gulshan">
+
+                <div class="amp-item-top">
+                  <span class="amp-name">
+                    Gulshan Fresh Street
+                  </span>
+
+                  <span class="amp-status is-live">
+                    <span class="amp-dot"></span>
+                    Tue, Thu &amp; Sat
+                  </span>
+                </div>
+
+                <div class="amp-meta">
+
+                  <span>
+                    <i class="bi bi-geo-alt"></i>
+                    Gulshan-e-Iqbal
+                  </span>
+
+                  <span>
+                    <i class="bi bi-basket2"></i>
+                    4 item types
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <section class="section pt-5" id="popular-markets">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+        <div>
+          <span class="badge-soft">Popular markets</span>
+          <h2 class="section-title mt-3">Markets people are discovering</h2>
+          <p class="section-sub mb-0">Explore popular neighborhood markets and open their full details.</p>
+        </div>
+        <a href="markets.html" class="btn btn-outline-green">View all markets</a>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-xl-4">
+          <article class="market-card h-100">
+            <div class="thumb-a market-a">
+              <img src="assets/Images/clifton.jpg" alt="">
+              <button type="button" class="bookmark-btn position-absolute top-0 end-0 m-2" data-bookmark-type="markets" data-bookmark-id="clifton" title="Save bookmark"><i class="bi bi-bookmark"></i></button>
+            </div>
+            <div class="card-body-custom">
+              <div class="d-flex justify-content-between gap-2 align-items-start">
+                <span class="badge-soft">Clifton</span>
+                <span class="small text-muted">Saturday</span>
+              </div>
+              <h4 class="mt-3 mb-2">Clifton Weekend Market</h4>
+              <p class="text-secondary">A relaxed weekend market with local growers, seasonal produce and small-batch
+                pantry goods.</p>
+              <div class="market-meta mb-3"><span><i class="bi bi-calendar-event"></i> Saturday, Sunday</span><span><i
+                    class="bi bi-clock"></i> 08:00 AM – 03:00 PM</span></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <a class="btn btn-outline-green" href="markets.html">Market</a>
+                <span class="price-chip">Vegetables · Fruits</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <article class="market-card h-100">
+            <div class="thumb-a market-b">
+              <img src="assets/Images/bahadurabad.jpg" alt="">
+              <button type="button" class="bookmark-btn position-absolute top-0 end-0 m-2" data-bookmark-type="markets" data-bookmark-id="bahadurabad" title="Save bookmark"><i class="bi bi-bookmark"></i></button>
+            </div>
+            <div class="card-body-custom">
+              <div class="d-flex justify-content-between gap-2 align-items-start">
+                <span class="badge-soft">Bahadurabad</span>
+                <span class="small text-muted">Wednesday</span>
+              </div>
+              <h4 class="mt-3 mb-2">Bahadurabad Green Market</h4>
+              <p class="text-secondary">Neighborhood produce stalls focused on fresh fruit, leafy greens and everyday
+                vegetables.</p>
+              <div class="market-meta mb-3"><span><i class="bi bi-calendar-event"></i> Wednesday,
+                  Saturday</span><span><i class="bi bi-clock"></i> 09:00 AM – 02:00 PM</span></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <a class="btn btn-outline-green" href="markets.html">Market</a>
+                <span class="price-chip">Fruits · Vegetables</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <article class="market-card h-100">
+            <div class="thumb-a market-c">
+              <img src="assets/Images/dha.jpg" alt="">
+              <button type="button" class="bookmark-btn position-absolute top-0 end-0 m-2" data-bookmark-type="markets" data-bookmark-id="dha" title="Save bookmark"><i class="bi bi-bookmark"></i></button>
+            </div>
+            <div class="card-body-custom">
+              <div class="d-flex justify-content-between gap-2 align-items-start">
+                <span class="badge-soft">DHA</span>
+                <span class="small text-muted">Friday</span>
+              </div>
+              <h4 class="mt-3 mb-2">DHA Farmers Market</h4>
+              <p class="text-secondary">A community-focused market featuring farm produce, dairy, bread and
+                ready-to-cook ingredients.</p>
+              <div class="market-meta mb-3"><span><i class="bi bi-calendar-event"></i> Friday, Saturday</span><span><i
+                    class="bi bi-clock"></i> 07:30 AM – 01:30 PM</span></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <a class="btn btn-outline-green" href="markets.html">Market</a>
+                <span class="price-chip">Vegetables · Fruits</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <span class="badge-soft">Seasonal picks</span>
+          <h2 class="section-title display-6 mt-3">Fresh ideas for this week</h2>
+          <p class="section-sub">Browse the Produce Guide to discover common seasonal items and the markets where you
+            can look for them.</p>
+          <a href="seasonal.html" class="btn btn-green">Explore Seasonal</a>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="info-card p-4 h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="product-icon mb-3"><img src="assets/Images/mango.png" alt="Mangoes" loading="lazy"
+                      onerror="this.style.display='none'"></div>
+                  <span class="badge-soft">Fruits</span>
+                  <h3 class="h5 mt-3">Mangoes</h3>
+                  <p class="small text-secondary mb-0">A popular seasonal fruit with several local varieties.</p>
+                </div>
+                <div class="pt-3 border-top mt-3">
+                  <a href="seasonal-detail.html#sindhri_mango" class="btn btn-outline-green btn-sm w-100"><i class="bi bi-eye me-1"></i>View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="info-card p-4 h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="product-icon mb-3"><img src="assets/Images/mint.png" alt="Fresh Mint" loading="lazy"
+                      onerror="this.style.display='none'"></div>
+                  <span class="badge-soft">Herbs</span>
+                  <h3 class="h5 mt-3">Fresh Mint</h3>
+                  <p class="small text-secondary mb-0">Useful for chutneys, drinks, salads and garnishes.</p>
+                </div>
+                <div class="pt-3 border-top mt-3">
+                  <a href="produce-detail.html#mint" class="btn btn-outline-green btn-sm w-100"><i class="bi bi-eye me-1"></i>View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="info-card p-4 h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="product-icon mb-3"><img src="assets/Images/tomato.png" alt="Tomatoes" loading="lazy"
+                      onerror="this.style.display='none'"></div>
+                  <span class="badge-soft">Vegetables</span>
+                  <h3 class="h5 mt-3">Tomatoes</h3>
+                  <p class="small text-secondary mb-0">An everyday kitchen staple commonly found at local markets.</p>
+                </div>
+                <div class="pt-3 border-top mt-3">
+                  <a href="produce-detail.html#tomato" class="btn btn-outline-green btn-sm w-100"><i class="bi bi-eye me-1"></i>View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="info-card p-4 h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="product-icon mb-3"><img src="assets/Images/yougurt.png" alt="Fresh Yogurt" loading="lazy"
+                      onerror="this.style.display='none'"></div>
+                  <span class="badge-soft">Dairy</span>
+                  <h3 class="h5 mt-3">Fresh Yogurt</h3>
+                  <p class="small text-secondary mb-0">A versatile fresh dairy item for meals and drinks.</p>
+                </div>
+                <div class="pt-3 border-top mt-3">
+                  <a href="produce-detail.html#yogurt" class="btn btn-outline-green btn-sm w-100"><i class="bi bi-eye me-1"></i>View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="produce-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 order-lg-2">
+          <span class="badge-soft">Produce Guide</span>
+          <h2 class="section-title display-6 mt-3">Essential fresh produce for your kitchen</h2>
+          <p class="section-sub">Discover farm-fresh vegetables, organic fruits, aromatic herbs and daily staples with availability info and local market connections.</p>
+          <a href="produce.html" class="btn btn-green">Explore Produce Guide</a>
+        </div>
+        <div class="col-lg-7 order-lg-1">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="info-card p-4 h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="product-icon mb-3"><img src="assets/Images/spinach.png" alt="Spinach" loading="lazy"
+                      onerror="this.style.display='none'"></div>
+                  <span class="badge-soft">Vegetables</span>
+                  <h3 class="h5 mt-3">Fresh Spinach</h3>
+                  <p class="small text-secondary mb-0">Leafy greens best enjoyed fresh and commonly sold in bunches.</p>
+                </div>
+                <div class="pt-3 border-top mt-3">
+                  <a href="produce-detail.html#spinach" class="btn btn-outline-green btn-sm w-100"><i class="bi bi-eye me-1"></i>View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="info-card p-4 h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="product-icon mb-3"><img src="assets/Images/potato.png" alt="Potatoes" loading="lazy"
+                      onerror="this.style.display='none'"></div>
+                  <span class="badge-soft">Vegetables</span>
+                  <h3 class="h5 mt-3">Potatoes</h3>
+                  <p class="small text-secondary mb-0">A versatile staple commonly available from local growers and produce sellers.</p>
+                </div>
+                <div class="pt-3 border-top mt-3">
+                  <a href="produce-detail.html#potato" class="btn btn-outline-green btn-sm w-100"><i class="bi bi-eye me-1"></i>View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="info-card p-4 h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="product-icon mb-3"><img src="assets/Images/banana.png" alt="Bananas" loading="lazy"
+                      onerror="this.style.display='none'"></div>
+                  <span class="badge-soft">Fruits</span>
+                  <h3 class="h5 mt-3">Bananas</h3>
+                  <p class="small text-secondary mb-0">Naturally sweet everyday fruit grown across Sindh farm belts.</p>
+                </div>
+                <div class="pt-3 border-top mt-3">
+                  <a href="produce-detail.html#banana" class="btn btn-outline-green btn-sm w-100"><i class="bi bi-eye me-1"></i>View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="info-card p-4 h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="product-icon mb-3"><img src="assets/Images/green chilie.png" alt="Chili" loading="lazy"
+                      onerror="this.style.display='none'"></div>
+                  <span class="badge-soft">Herbs &amp; Spices</span>
+                  <h3 class="h5 mt-3">Green Chilies</h3>
+                  <p class="small text-secondary mb-0">Piquant fresh chilies adding vibrant local flavor to any recipe.</p>
+                </div>
+                <div class="pt-3 border-top mt-3">
+                  <a href="produce-detail.html#chili" class="btn btn-outline-green btn-sm w-100"><i class="bi bi-eye me-1"></i>View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft" id="market-highlights">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+        <div>
+          <span class="badge-soft"><i class="bi bi-star-fill text-warning me-1"></i> Market Highlights</span>
+          <h2 class="section-title mt-3">Featured Market Highlights</h2>
+          <p class="section-sub mb-0">Handpicked farmers markets with unique artisan stalls, live harvest offerings and weekend specials.</p>
+        </div>
+        <a href="highlights.html" class="btn btn-outline-green">View all highlights <i class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-4">
+          <article class="market-card h-100 position-relative">
+            <div class="thumb market-a">
+              <button type="button" class="bookmark-btn position-absolute top-0 end-0 m-2" data-bookmark-type="markets" data-bookmark-id="clifton" title="Save bookmark"><i class="bi bi-bookmark"></i></button>
+              <div class="illustration"><img src="assets/Images/clifton.jpg" alt="Clifton Weekend Market" loading="lazy" onerror="this.style.display='none'"></div>
+            </div>
+            <div class="card-body-custom">
+              <div class="d-flex justify-content-between gap-2 align-items-start">
+                <span class="badge-soft">Clifton</span>
+                <span class="badge bg-warning text-dark"><i class="bi bi-award-fill me-1"></i>Featured</span>
+              </div>
+              <h4 class="mt-3 mb-2">Clifton Weekend Market</h4>
+              <p class="text-secondary">A relaxed weekend market with local growers, seasonal produce and small-batch pantry goods.</p>
+              <div class="market-meta mb-3">
+                <span><i class="bi bi-calendar-event"></i> Saturday, Sunday</span>
+                <span><i class="bi bi-clock"></i> 08:00 AM – 03:00 PM</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center gap-2 pt-2 border-top">
+                <a class="btn btn-outline-green btn-sm" href="market-detail.html#clifton">View details</a>
+                <div class="d-flex align-items-center gap-2">
+                  <button type="button" class="btn btn-sm btn-outline-secondary share-trigger-btn" data-share-title="Clifton Weekend Market" data-share-text="Check out Clifton Weekend Market on FreshFind!" data-share-url="market-detail.html#clifton"><i class="bi bi-share"></i></button>
+                  <span class="price-chip">Vegetables · Fruits</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <article class="market-card h-100 position-relative">
+            <div class="thumb market-b">
+              <button type="button" class="bookmark-btn position-absolute top-0 end-0 m-2" data-bookmark-type="markets" data-bookmark-id="bahadurabad" title="Save bookmark"><i class="bi bi-bookmark"></i></button>
+              <div class="illustration"><img src="assets/Images/Bahadurabad.jpg" alt="Bahadurabad Green Market" loading="lazy" onerror="this.style.display='none'"></div>
+            </div>
+            <div class="card-body-custom">
+              <div class="d-flex justify-content-between gap-2 align-items-start">
+                <span class="badge-soft">Bahadurabad</span>
+                <span class="badge bg-success"><i class="bi bi-check-circle-fill me-1"></i>Popular</span>
+              </div>
+              <h4 class="mt-3 mb-2">Bahadurabad Green Market</h4>
+              <p class="text-secondary">Neighborhood produce stalls focused on fresh fruit, leafy greens and everyday vegetables.</p>
+              <div class="market-meta mb-3">
+                <span><i class="bi bi-calendar-event"></i> Wednesday, Saturday</span>
+                <span><i class="bi bi-clock"></i> 09:00 AM – 02:00 PM</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center gap-2 pt-2 border-top">
+                <a class="btn btn-outline-green btn-sm" href="market-detail.html#bahadurabad">View details</a>
+                <div class="d-flex align-items-center gap-2">
+                  <button type="button" class="btn btn-sm btn-outline-secondary share-trigger-btn" data-share-title="Bahadurabad Green Market" data-share-text="Check out Bahadurabad Green Market on FreshFind!" data-share-url="market-detail.html#bahadurabad"><i class="bi bi-share"></i></button>
+                  <span class="price-chip">Fruits · Vegetables</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <article class="market-card h-100 position-relative">
+            <div class="thumb market-c">
+              <button type="button" class="bookmark-btn position-absolute top-0 end-0 m-2" data-bookmark-type="markets" data-bookmark-id="dha" title="Save bookmark"><i class="bi bi-bookmark"></i></button>
+              <div class="illustration"><img src="assets/Images/dha.jpg" alt="DHA Farmers Market" loading="lazy" onerror="this.style.display='none'"></div>
+            </div>
+            <div class="card-body-custom">
+              <div class="d-flex justify-content-between gap-2 align-items-start">
+                <span class="badge-soft">DHA</span>
+                <span class="badge bg-info text-dark"><i class="bi bi-gem me-1"></i>Organic Hub</span>
+              </div>
+              <h4 class="mt-3 mb-2">DHA Farmers Market</h4>
+              <p class="text-secondary">A community-focused market featuring farm produce, dairy, bread and ready-to-cook ingredients.</p>
+              <div class="market-meta mb-3">
+                <span><i class="bi bi-calendar-event"></i> Friday, Saturday</span>
+                <span><i class="bi bi-clock"></i> 07:30 AM – 01:30 PM</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center gap-2 pt-2 border-top">
+                <a class="btn btn-outline-green btn-sm" href="market-detail.html#dha">View details</a>
+                <div class="d-flex align-items-center gap-2">
+                  <button type="button" class="btn btn-sm btn-outline-secondary share-trigger-btn" data-share-title="DHA Farmers Market" data-share-text="Check out DHA Farmers Market on FreshFind!" data-share-url="market-detail.html#dha"><i class="bi bi-share"></i></button>
+                  <span class="price-chip">Vegetables · Fruits</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/navbar.js"></script>
+  <script src="assets/footer.js"></script>
+  <script src="assets/chatbot.js"></script>
+  <script src="assets/validation.js"></script>
+  <script src="assets/auth.js"></script>
+  <script src="assets/cards.js"></script>
+  <script src="assets/hero-nearby.js"></script>
+</body>
+
+</html>

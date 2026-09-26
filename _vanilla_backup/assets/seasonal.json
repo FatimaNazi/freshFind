@@ -1,0 +1,285 @@
+{
+  "seasonalProduce": [
+    {
+      "id": "sindhri_mango",
+      "name": "Sindhri Mangoes",
+      "season": "Summer",
+      "category": "Fruits",
+      "months": "May – July",
+      "status": "Peak Season",
+      "description": "The quintessential summer treasure of Sindh. Incredibly aromatic, rich golden pulp, and low fiber content.",
+      "flavorNotes": "Intensely sweet, floral aroma, melt-in-mouth texture",
+      "image": "assets/Images/mango.jpg",
+      "alt": "Fresh Sindhri Mangoes",
+      "markets": [
+        "Clifton Weekend Market",
+        "Bahadurabad Green Market",
+        "DHA Farmers Market",
+        "Korangi Community Market"
+      ]
+    },
+    {
+      "id": "anwar_ratol",
+      "name": "Anwar Ratol Mangoes",
+      "season": "Summer",
+      "category": "Fruits",
+      "months": "July – August",
+      "status": "Late Summer Special",
+      "description": "Compact in size with an intoxicating fragrance and miniature burst of honeyed sweetness.",
+      "flavorNotes": "Deep nectar sweetness, highly aromatic",
+      "image": "assets/Images/mango.jpg",
+      "alt": "Anwar Ratol Mangoes",
+      "markets": [
+        "Bahadurabad Green Market",
+        "Tariq Road Fresh Mart",
+        "DHA Farmers Market"
+      ]
+    },
+    {
+      "id": "karela_bittergourd",
+      "name": "Crisp Bitter Gourd (Karela)",
+      "season": "Summer",
+      "category": "Vegetables",
+      "months": "May – September",
+      "status": "Fresh Harvest",
+      "description": "Rich in antioxidants and minerals, summer bitter gourds are harvested young for crispy sautéing and stuffing.",
+      "flavorNotes": "Distinctive herbal bitter flavor, crisp exterior",
+      "image": "assets/Images/chili.jpg",
+      "alt": "Crisp Bitter Gourd",
+      "markets": [
+        "Gulshan Fresh Street",
+        "Malir Farmers Market",
+        "Clifton Weekend Market"
+      ]
+    },
+    {
+      "id": "farm_spinach",
+      "name": "Organic Farm Spinach (Palak)",
+      "season": "Winter",
+      "category": "Vegetables",
+      "months": "November – February",
+      "status": "Cool Season Peak",
+      "description": "Lush dark green leaves bundled freshly from Malir farm belts. Packed with iron, calcium, and vitamins.",
+      "flavorNotes": "Earthy, mineral-rich, tender when steamed",
+      "image": "assets/Images/spinach.jpg",
+      "alt": "Fresh Winter Spinach",
+      "markets": [
+        "Clifton Weekend Market",
+        "Malir Farmers Market",
+        "Gulshan Fresh Street",
+        "North Nazimabad Growers Hub"
+      ]
+    },
+    {
+      "id": "red_carrots",
+      "name": "Desi Red Carrots (Gajar)",
+      "season": "Winter",
+      "category": "Vegetables",
+      "months": "December – February",
+      "status": "Winter Specialty",
+      "description": "Deep crimson sweet local carrots, renowned across Pakistani winter markets for fresh juices, salads, and traditional halwa.",
+      "flavorNotes": "Naturally sweet, crunchy, vibrant color",
+      "image": "assets/Images/tomato.jpg",
+      "alt": "Desi Red Carrots",
+      "markets": [
+        "Bahadurabad Green Market",
+        "DHA Farmers Market",
+        "Saddar Heritage Bazaar"
+      ]
+    },
+    {
+      "id": "fresh_mint",
+      "name": "Garden Mint (Podina)",
+      "season": "Winter",
+      "category": "Herbs",
+      "months": "November – March",
+      "status": "Cool Season Harvest",
+      "description": "Hand-picked fragrant bunches, perfect for fresh raita, winter chutneys, hot teas, and detox drinks.",
+      "flavorNotes": "Cooling menthol kick, vibrant aroma",
+      "image": "assets/Images/mint.jpg",
+      "alt": "Fresh Garden Mint",
+      "markets": [
+        "Clifton Weekend Market",
+        "Bahadurabad Green Market",
+        "Gulshan Fresh Street",
+        "Malir Farmers Market"
+      ]
+    },
+    {
+      "id": "green_peas",
+      "name": "Tender Green Peas (Matar)",
+      "season": "Winter",
+      "category": "Vegetables",
+      "months": "December – February",
+      "status": "Peak Harvest",
+      "description": "Sweet young pea pods freshly shelled at morning bazaar stalls, packed with plant protein.",
+      "flavorNotes": "Delicate sweet burst, tender snap",
+      "image": "assets/Images/spinach.jpg",
+      "alt": "Tender Green Peas",
+      "markets": [
+        "DHA Farmers Market",
+        "Clifton Weekend Market",
+        "North Nazimabad Growers Hub"
+      ]
+    },
+    {
+      "id": "strawberries",
+      "name": "Fresh Farm Strawberries",
+      "season": "Spring",
+      "category": "Fruits",
+      "months": "February – April",
+      "status": "Early Spring Arrival",
+      "description": "Sweet and tangy crimson berries cultivated around Sindh's southern farmlands, brought daily to urban weekend stalls.",
+      "flavorNotes": "Juicy, sweet-tart balance, fragrant",
+      "image": "assets/Images/tomato.jpg",
+      "alt": "Fresh Farm Strawberries",
+      "markets": [
+        "DHA Farmers Market",
+        "Clifton Weekend Market",
+        "Bahadurabad Green Market"
+      ]
+    },
+    {
+      "id": "spring_cucumbers",
+      "name": "Crisp Garden Cucumbers (Kheera)",
+      "season": "Spring",
+      "category": "Vegetables",
+      "months": "March – June",
+      "status": "Spring Harvest",
+      "description": "Hydrating, thin-skinned field cucumbers, harvested early morning for superior crunch in seasonal salads.",
+      "flavorNotes": "Cool, crisp, refreshing moisture",
+      "image": "assets/Images/banana.jpg",
+      "alt": "Crisp Garden Cucumbers",
+      "markets": [
+        "Gulshan Fresh Street",
+        "Korangi Community Market",
+        "PECHS Sunday Market"
+      ]
+    },
+    {
+      "id": "guavas",
+      "name": "Sweet White Guavas (Amrood)",
+      "season": "Autumn",
+      "category": "Fruits",
+      "months": "September – November",
+      "status": "Autumn Crop",
+      "description": "Fragrant Sindh guavas with a crisp bite and aromatic soft center. Rich in vitamin C and dietary fiber.",
+      "flavorNotes": "Mildly sweet, musky tropical fragrance",
+      "image": "assets/Images/banana.jpg",
+      "alt": "Sweet White Guavas",
+      "markets": [
+        "Bahadurabad Green Market",
+        "Malir Farmers Market",
+        "Saddar Heritage Bazaar"
+      ]
+    },
+    {
+      "id": "lauki_gourd",
+      "name": "Tender Bottle Gourd (Lauki)",
+      "season": "Autumn",
+      "category": "Vegetables",
+      "months": "August – October",
+      "status": "Post-Monsoon Staple",
+      "description": "Light, easily digestible autumn gourd cooked in curries or prepared into comforting lentil stews.",
+      "flavorNotes": "Subtle, mildly sweet, soft spongy flesh",
+      "image": "assets/Images/potato.jpg",
+      "alt": "Tender Bottle Gourd",
+      "markets": [
+        "Gulshan Fresh Street",
+        "Korangi Community Market",
+        "Clifton Weekend Market"
+      ]
+    },
+    {
+      "id": "staple_tomatoes",
+      "name": "Vine-Ripened Tomatoes",
+      "season": "Year-round",
+      "category": "Vegetables",
+      "months": "Available All Year",
+      "status": "Year-Round Staple",
+      "description": "Plump, red cooking and salad tomatoes continuously supplied from open fields and greenhouse tunnels across Sindh.",
+      "flavorNotes": "Balanced acidity, juicy umami depth",
+      "image": "assets/Images/tomato.jpg",
+      "alt": "Vine-Ripened Tomatoes",
+      "markets": [
+        "Clifton Weekend Market",
+        "DHA Farmers Market",
+        "Gulshan Fresh Street",
+        "Bahadurabad Green Market",
+        "Korangi Community Market"
+      ]
+    },
+    {
+      "id": "staple_potatoes",
+      "name": "Fresh Crop Potatoes (Aloo)",
+      "season": "Year-round",
+      "category": "Vegetables",
+      "months": "Available All Year",
+      "status": "Year-Round Staple",
+      "description": "Versatile all-purpose potatoes sourced from trusted growers, providing dependable kitchen foundations year-round.",
+      "flavorNotes": "Earthy, starchy, buttery when roasted",
+      "image": "assets/Images/potato.jpg",
+      "alt": "Fresh Potatoes",
+      "markets": [
+        "Clifton Weekend Market",
+        "Bahadurabad Green Market",
+        "DHA Farmers Market",
+        "North Nazimabad Growers Hub"
+      ]
+    },
+    {
+      "id": "staple_bananas",
+      "name": "Coastal Sindh Bananas",
+      "season": "Year-round",
+      "category": "Fruits",
+      "months": "Available All Year",
+      "status": "Year-Round Staple",
+      "description": "Sweet, naturally ripened bananas grown throughout the fertile lower Indus basin and coastal belts.",
+      "flavorNotes": "Creamy, naturally sweet, quick energy",
+      "image": "assets/Images/banana.jpg",
+      "alt": "Coastal Sindh Bananas",
+      "markets": [
+        "Clifton Weekend Market",
+        "Bahadurabad Green Market",
+        "Gulshan Fresh Street",
+        "Tariq Road Fresh Mart"
+      ]
+    },
+    {
+      "id": "staple_yogurt",
+      "name": "Traditional Fresh Yogurt (Dahi)",
+      "season": "Year-round",
+      "category": "Dairy",
+      "months": "Available All Year",
+      "status": "Year-Round Staple",
+      "description": "Farm-fresh cultured buffalo and cow milk yogurt, prepared daily by local dairy vendors in clay and steel pots.",
+      "flavorNotes": "Velvety, mild pleasant tang",
+      "image": "assets/Images/yogurt.jpg",
+      "alt": "Fresh Farm Yogurt",
+      "markets": [
+        "Clifton Weekend Market",
+        "DHA Farmers Market",
+        "PECHS Sunday Market",
+        "North Nazimabad Growers Hub"
+      ]
+    },
+    {
+      "id": "staple_chilies",
+      "name": "Fiery Green Chilies (Hari Mirch)",
+      "season": "Year-round",
+      "category": "Vegetables",
+      "months": "Available All Year",
+      "status": "Year-Round Staple",
+      "description": "Crisp green chilies in mild to intensely pungent varieties, essential for authentic Pakistani spice blends.",
+      "flavorNotes": "Pungent heat, herbal sharpness",
+      "image": "assets/Images/chili.jpg",
+      "alt": "Fiery Green Chilies",
+      "markets": [
+        "Gulshan Fresh Street",
+        "Korangi Community Market",
+        "DHA Farmers Market",
+        "Saddar Heritage Bazaar"
+      ]
+    }
+  ]
+}

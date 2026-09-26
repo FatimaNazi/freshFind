@@ -1,0 +1,90 @@
+[
+  {
+    "question": "Find markets near me",
+    "answer": "You can find markets near your current location using the dynamic hero section on our homepage (click 'Locate Nearest Market'), or explore the Market Directory to filter by your neighborhood!"
+  },
+  {
+    "question": "What produce is in season?",
+    "answer": "Check our Produce Guide! In the cool season, look for fresh spinach and mint. Late spring and summer bring sweet mangoes, while tomatoes, potatoes, bananas, and yogurt are available year-round."
+  },
+  {
+    "question": "Show vegetable markets",
+    "answer": "Clifton Weekend Market, DHA Farmers Market, Gulshan Fresh Street, and Malir Farmers Market all offer extensive fresh vegetable selections directly from local growers."
+  },
+  {
+    "question": "Which markets are open today?",
+    "answer": "Check the Market Directory open-days filter! Clifton and Malir open on weekends; Bahadurabad is open Wed & Sat; Gulshan opens Tue, Thu & Sat; Saddar opens Mon, Wed & Fri."
+  },
+  {
+    "question": "Find fruit markets",
+    "answer": "Bahadurabad Green Market, Tariq Road Fresh Mart, and Clifton Weekend Market feature wide selections of fresh seasonal fruits including mangoes and bananas."
+  },
+  {
+    "question": "What is FreshFind?",
+    "answer": "FreshFind helps visitors discover farmers markets, local produce, seasonal products, and market contact info across Karachi in one simple place."
+  },
+  {
+    "question": "How can I find a market?",
+    "answer": "Open the Find Market page or the Market Directory, then use the location, day, and produce filters or search by area to find markets."
+  },
+  {
+    "question": "How do I filter markets?",
+    "answer": "On the Market Directory page, you can search by area, filter by location, open days (weekday/weekend), produce category, and organic availability, then sort by rating or name."
+  },
+  {
+    "question": "How do I sort markets?",
+    "answer": "Use the sort dropdown on the Market Directory to order markets by name (A-Z, Z-A), location, or highest/lowest rating."
+  },
+  {
+    "question": "What are the market hours?",
+    "answer": "Each market's operating days and hours are shown on its card and in full detail on its Market Detail page with weekly schedules."
+  },
+  {
+    "question": "Are the markets open every day?",
+    "answer": "No, most markets only open on specific days of the week. Check the calendar icon on each market card or check the Market Detail schedule."
+  },
+  {
+    "question": "Which markets sell organic produce?",
+    "answer": "Clifton Weekend Market, DHA Farmers Market, North Nazimabad Growers Hub, and Malir Farmers Market feature certified organic selections. Filter by 'Organic only' on the directory!"
+  },
+  {
+    "question": "What produce is available?",
+    "answer": "Visit the Produce Guide to browse product categories (Vegetables, Fruits, Herbs, Dairy, Bakery, Meat, Pantry) and see which markets stock them."
+  },
+  {
+    "question": "How do I bookmark a market?",
+    "answer": "Click the bookmark ribbon button on any market or produce card to save it. You can also add personal session notes to your bookmarks."
+  },
+  {
+    "question": "Where can I see my bookmarks?",
+    "answer": "Open the Bookmarks page from the top navigation to view, download guides, export, and manage your personal notes."
+  },
+  {
+    "question": "Do bookmarks stay saved after I close the browser?",
+    "answer": "Yes, bookmarked items are stored in your browser's local storage. Personal notes on bookmarks are session-only."
+  },
+  {
+    "question": "How do I contact FreshFind?",
+    "answer": "Visit our Contact page to send a direct message and check our office location map, or email hello@freshfind.example."
+  },
+  {
+    "question": "How do I leave feedback?",
+    "answer": "Click 'Feedback' in the top navigation bar right before Contact to rate your experience (1 to 5 stars) and send suggestions."
+  },
+  {
+    "question": "Can I suggest a new market?",
+    "answer": "Yes! Submit the market name, area, and schedule through the form on our Feedback or Contact page."
+  },
+  {
+    "question": "Do I need an account to use FreshFind?",
+    "answer": "No account is required to browse markets, view the produce guide, or save bookmarks. Login and Sign Up are demo simulations for this project."
+  },
+  {
+    "question": "Is FreshFind available on mobile?",
+    "answer": "Yes, FreshFind is fully responsive and optimized for desktop, tablet, and mobile devices."
+  },
+  {
+    "question": "Where is FreshFind based?",
+    "answer": "FreshFind showcases local markets and produce across Karachi, Sindh, Pakistan."
+  }
+]

@@ -1,0 +1,169 @@
+{
+  "products": [
+    {
+      "id": "tomato",
+      "name": "Tomatoes",
+      "category": "Vegetables",
+      "season": "Year-round",
+      "description": "Juicy tomatoes used in salads, curries, sauces and everyday cooking.",
+      "image": "/assets/Images/tomato.png",
+      "alt": "Tomatoes",
+      "markets": [
+        "Clifton Weekend Market",
+        "DHA Farmers Market",
+        "Gulshan Fresh Street",
+        "Korangi Community Market"
+      ]
+    },
+    {
+      "id": "potato",
+      "name": "Potatoes",
+      "category": "Vegetables",
+      "season": "Year-round",
+      "description": "A versatile staple commonly available from local growers and produce sellers.",
+      "image": "/assets/Images/potato.png",
+      "alt": "Potatoes",
+      "markets": [
+        "Clifton Weekend Market",
+        "Bahadurabad Green Market",
+        "DHA Farmers Market"
+      ]
+    },
+    {
+      "id": "spinach",
+      "name": "Spinach",
+      "category": "Vegetables",
+      "season": "Cool season",
+      "description": "Leafy greens best enjoyed fresh and commonly sold in bunches.",
+      "image": "/assets/Images/spinach.png",
+      "alt": "Spinach",
+      "markets": [
+        "Clifton Weekend Market",
+        "Gulshan Fresh Street",
+        "North Nazimabad Growers Hub"
+      ]
+    },
+    {
+      "id": "mango",
+      "name": "Mangoes",
+      "category": "Fruits",
+      "season": "Late spring–summer",
+      "description": "Sweet seasonal fruit with many local varieties and uses.",
+      "image": "/assets/Images/mango.png",
+      "alt": "Mangoes",
+      "markets": [
+        "Bahadurabad Green Market",
+        "DHA Farmers Market",
+        "Korangi Community Market"
+      ]
+    },
+    {
+      "id": "banana",
+      "name": "Bananas",
+      "category": "Fruits",
+      "season": "Year-round",
+      "description": "A convenient fruit often stocked by neighborhood produce vendors.",
+      "image": "/assets/Images/banana.png",
+      "alt": "Bananas",
+      "markets": [
+        "Clifton Weekend Market",
+        "Bahadurabad Green Market",
+        "Gulshan Fresh Street"
+      ]
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "Herbs",
+      "season": "Cool season",
+      "description": "A fragrant herb used for chutneys, drinks, salads and garnishes.",
+      "image": "/assets/Images/mint.png",
+      "alt": "Mint",
+      "markets": [
+        "Clifton Weekend Market",
+        "Bahadurabad Green Market",
+        "Gulshan Fresh Street"
+      ]
+    },
+    {
+      "id": "yogurt",
+      "name": "Fresh Yogurt",
+      "category": "Dairy",
+      "season": "Year-round",
+      "description": "Fresh cultured dairy commonly paired with savory dishes and drinks.",
+      "image": "/assets/Images/yougurt.png",
+      "alt": "Fresh Yogurt",
+      "markets": [
+        "Clifton Weekend Market",
+        "DHA Farmers Market",
+        "North Nazimabad Growers Hub"
+      ]
+    },
+    {
+      "id": "chili",
+      "name": "Green Chilies",
+      "category": "Vegetables",
+      "season": "Year-round",
+      "description": "A staple cooking ingredient available in mild to hot varieties.",
+      "image": "/assets/Images/green chilie.png",
+      "alt": "Green Chilies",
+      "markets": [
+        "Gulshan Fresh Street",
+        "Korangi Community Market",
+        "DHA Farmers Market"
+      ]
+    },
+    {
+      "id": "bread",
+      "name": "Artisanal Multigrain Bread",
+      "category": "Bakery",
+      "season": "Year-round",
+      "description": "Freshly baked sourdough and multigrain loaves from local independent bakers.",
+      "image": "/assets/Images/bread.jpeg",
+      "alt": "Artisanal Multigrain Bread",
+      "markets": [
+        "Tariq Road Fresh Mart",
+        "DHA Farmers Market"
+      ]
+    },
+    {
+      "id": "eggs_poultry",
+      "name": "Farm-Fresh Eggs & Country Poultry",
+      "category": "Meat",
+      "season": "Year-round",
+      "description": "Free-range country eggs and certified farm poultry cuts raised with ethical feeding practices.",
+      "image": "/assets/Images/eggs.png",
+      "alt": "Farm-Fresh Eggs & Poultry",
+      "markets": [
+        "DHA Farmers Market",
+        "Malir Farmers Market"
+      ]
+    },
+    {
+      "id": "honey_pantry",
+      "name": "Raw Sidr Honey & Pantry Goods",
+      "category": "Pantry",
+      "season": "Year-round",
+      "description": "Unfiltered pure mountain honey, cold-pressed mustard oil, and small-batch preserves.",
+      "image": "/assets/Images/mango.png",
+      "alt": "Raw Sidr Honey & Pantry Goods",
+      "markets": [
+        "Clifton Weekend Market",
+        "Saddar Heritage Bazaar"
+      ]
+    },
+    {
+      "id": "spices_blend",
+      "name": "Hand-Ground Masala & Whole Spices",
+      "category": "Spices",
+      "season": "Year-round",
+      "description": "Stoneground aromatic turmeric, cumin, coriander seeds, and whole cinnamon bark.",
+      "image": "/assets/Images/masala.png",
+      "alt": "Hand-Ground Masala & Spices",
+      "markets": [
+        "Saddar Heritage Bazaar",
+        "Malir Farmers Market"
+      ]
+    }
+  ]
+}
