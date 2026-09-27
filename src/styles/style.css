@@ -1739,29 +1739,32 @@ img {
   to { opacity: 1; transform: scale(1); }
 }
 
-/* --- Produce Thumb Styling (Produce & Bookmarks) --- */
+/* --- Produce Thumb Styling (Produce, Seasonal & Bookmarks) --- */
 .produce-thumb {
-  height: 200px;
-  background: linear-gradient(135deg, #f7f5ed, #ede8dc);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  height: 240px;
+  width: 100%;
+  background: #ffffff;
   position: relative;
-  padding: 1.25rem;
+  overflow: hidden;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block;
+  border-bottom: 1px solid var(--line);
 }
 
 .produce-thumb img {
-  max-height: 150px;
-  width: auto;
-  max-width: 90%;
-  object-fit: contain;
-  transition: transform 0.35s ease;
-  filter: drop-shadow(0 8px 16px rgba(18, 42, 31, 0.12));
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  transition: transform 0.4s ease;
 }
 
 .product-card:hover .produce-thumb img {
-  transform: scale(1.08);
+  transform: scale(1.06);
 }
 
 /* --- Bookmarks Action Buttons & Modern Notes --- */
