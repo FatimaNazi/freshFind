@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Breadcrumb from "../components/Breadcrumb";
 import marketsData from "../data/markets.json";
 import productsData from "../data/products.json";
+import seasonalData from "../data/seasonal.json";
 import {
   getBookmarks,
   toggleBookmark,
@@ -22,7 +23,18 @@ export default function Bookmarks() {
   const { addToast } = useToast();
 
   const allMarkets = marketsData.markets || [];
-  const allProducts = productsData.products || [];
+  const seasonalList = (seasonalData.seasonalProduce || []).map((item) => ({
+    ...item,
+    isSeasonal: true
+  }));
+  const regularList = (productsData.products || []).map((item) => ({
+    ...item,
+    isSeasonal: false
+  }));
+  const allProduceMap = new Map();
+  regularList.forEach((item) => allProduceMap.set(String(item.id), item));
+  seasonalList.forEach((item) => allProduceMap.set(String(item.id), item));
+  const allProducts = Array.from(allProduceMap.values());
 
   const [savedMarketIds, setSavedMarketIds] = useState([]);
   const [savedProduceIds, setSavedProduceIds] = useState([]);
@@ -36,6 +48,13 @@ export default function Bookmarks() {
 
   useEffect(() => {
     loadBookmarks();
+    const handleBookmarkChange = () => {
+      loadBookmarks();
+    };
+    window.addEventListener("bookmarks:changed", handleBookmarkChange);
+    return () => {
+      window.removeEventListener("bookmarks:changed", handleBookmarkChange);
+    };
   }, []);
 
   const savedMarkets = allMarkets.filter((m) => savedMarketIds.includes(String(m.id)));
@@ -501,7 +520,10 @@ export default function Bookmarks() {
                         {/* Card Bottom Actions */}
                         <div className="px-4 pb-3">
                           <div className="d-flex justify-content-between align-items-center gap-2 pt-2 border-top">
-                            <Link to={`/produce/${product.id}`} className="btn btn-outline-green btn-sm fw-semibold">
+                            <Link
+                              to={product.isSeasonal ? `/seasonal/${product.id}` : `/produce/${product.id}`}
+                              className="btn btn-outline-green btn-sm fw-semibold"
+                            >
                               <i className="bi bi-eye me-1"></i>View Details
                             </Link>
                             <div className="d-flex align-items-center gap-2">
@@ -521,7 +543,7 @@ export default function Bookmarks() {
                                   openShare(
                                     product.name,
                                     `Check out seasonal ${product.name} on FreshFind!`,
-                                    `/produce/${product.id}`
+                                    product.isSeasonal ? `/seasonal/${product.id}` : `/produce/${product.id}`
                                   )
                                 }
                               >

@@ -47,6 +47,15 @@ export default function SeasonalCard({ item, onBookmarkChange }) {
 
   useEffect(() => {
     setSaved(isBookmarked("produce", item.id));
+    const handleBookmarkEvent = (e) => {
+      if (e.detail && e.detail.type === "produce" && String(e.detail.id) === String(item.id)) {
+        setSaved(e.detail.saved);
+      }
+    };
+    window.addEventListener("bookmarks:changed", handleBookmarkEvent);
+    return () => {
+      window.removeEventListener("bookmarks:changed", handleBookmarkEvent);
+    };
   }, [item.id]);
 
   const handleBookmarkToggle = (e) => {

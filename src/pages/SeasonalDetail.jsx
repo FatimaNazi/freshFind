@@ -72,6 +72,16 @@ export default function SeasonalDetail() {
     if (item) {
       setSaved(isBookmarked("produce", item.id));
       document.title = `${item.name} | FreshFind Seasonal Guide`;
+
+      const handleBookmarkEvent = (e) => {
+        if (e.detail && e.detail.type === "produce" && String(e.detail.id) === String(item.id)) {
+          setSaved(e.detail.saved);
+        }
+      };
+      window.addEventListener("bookmarks:changed", handleBookmarkEvent);
+      return () => {
+        window.removeEventListener("bookmarks:changed", handleBookmarkEvent);
+      };
     }
   }, [item]);
 

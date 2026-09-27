@@ -44,7 +44,7 @@
       "status": "Fresh Harvest",
       "description": "Rich in antioxidants and minerals, summer bitter gourds are harvested young for crispy sautéing and stuffing.",
       "flavorNotes": "Distinctive herbal bitter flavor, crisp exterior",
-      "image": "/assets/Images/chili.jpg",
+      "image": "/assets/Images/karela.jpg",
       "alt": "Crisp Bitter Gourd",
       "markets": [
         "Gulshan Fresh Street",
@@ -79,7 +79,7 @@
       "status": "Winter Specialty",
       "description": "Deep crimson sweet local carrots, renowned across Pakistani winter markets for fresh juices, salads, and traditional halwa.",
       "flavorNotes": "Naturally sweet, crunchy, vibrant color",
-      "image": "/assets/Images/tomato.jpg",
+      "image": "/assets/Images/gajar.jpg",
       "alt": "Desi Red Carrots",
       "markets": [
         "Bahadurabad Green Market",
@@ -114,7 +114,7 @@
       "status": "Peak Harvest",
       "description": "Sweet young pea pods freshly shelled at morning bazaar stalls, packed with plant protein.",
       "flavorNotes": "Delicate sweet burst, tender snap",
-      "image": "/assets/Images/spinach.jpg",
+      "image": "/assets/Images/matar.jpg",
       "alt": "Tender Green Peas",
       "markets": [
         "DHA Farmers Market",
@@ -131,7 +131,7 @@
       "status": "Early Spring Arrival",
       "description": "Sweet and tangy crimson berries cultivated around Sindh's southern farmlands, brought daily to urban weekend stalls.",
       "flavorNotes": "Juicy, sweet-tart balance, fragrant",
-      "image": "/assets/Images/tomato.jpg",
+      "image": "/assets/Images/strawberry.jpg",
       "alt": "Fresh Farm Strawberries",
       "markets": [
         "DHA Farmers Market",
@@ -148,7 +148,7 @@
       "status": "Spring Harvest",
       "description": "Hydrating, thin-skinned field cucumbers, harvested early morning for superior crunch in seasonal salads.",
       "flavorNotes": "Cool, crisp, refreshing moisture",
-      "image": "/assets/Images/banana.jpg",
+      "image": "/assets/Images/kheera.jpg",
       "alt": "Crisp Garden Cucumbers",
       "markets": [
         "Gulshan Fresh Street",
@@ -165,7 +165,7 @@
       "status": "Autumn Crop",
       "description": "Fragrant Sindh guavas with a crisp bite and aromatic soft center. Rich in vitamin C and dietary fiber.",
       "flavorNotes": "Mildly sweet, musky tropical fragrance",
-      "image": "/assets/Images/banana.jpg",
+      "image": "/assets/Images/amrood.jpg",
       "alt": "Sweet White Guavas",
       "markets": [
         "Bahadurabad Green Market",
@@ -182,7 +182,7 @@
       "status": "Post-Monsoon Staple",
       "description": "Light, easily digestible autumn gourd cooked in curries or prepared into comforting lentil stews.",
       "flavorNotes": "Subtle, mildly sweet, soft spongy flesh",
-      "image": "/assets/Images/potato.jpg",
+      "image": "/assets/Images/lauki.jpg",
       "alt": "Tender Bottle Gourd",
       "markets": [
         "Gulshan Fresh Street",
